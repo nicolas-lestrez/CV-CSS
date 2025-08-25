@@ -39,3 +39,16 @@
 body{
     background-color: var(--blanc-casse-cv);
 }
+
+.container{
+    max-width: 1600px;
+    background-color: var(--blanc-cv);
+    margin: 0 auto;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 330px;
+    background-color: var(--vert-cv);
+}
