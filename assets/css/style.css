@@ -116,7 +116,9 @@ main{
     width: 100%;
     display: flex;
 }
-
+main p{
+    font-family: 'Raleway', sans-serif;
+}
 main h2{
     font-family: "Lato", sans-serif;
     color: var(--vert-cv);
@@ -128,18 +130,98 @@ main h2{
     width: 30%;
     background-color: var(--gris-clair-cv);
 }
-.competence{
-    padding: 40px 80px;
+.competence, .langue, .qualite, .interet{
+    padding: 40px 60px 0 60px;
 }
 hr{
-    margin: 10px 0;
+    margin: 20px 0;
     color: #33333322;
 }
+
+.compet-item, .langue-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.compet-item li, .langue-item li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.compet-name, .langue-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: var(--gris-cv);
+}
+
+.stars i {
+  color: var(--vert-cv);
+  font-size: 1rem;
+}
+.qualite-item, .interet-item {
+    list-style: square;
+    margin: 0;
+    padding: 0;
+}
+.qualite-item li, .interet-item li{
+    display: list-item;
+    justify-content: space-between;
+    margin-bottom: 5px;  
+    margin-left: 20px;
+}
+.qualite-name, .interet-name{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: var(--gris-cv); 
+
+}
+.qualite-name::marker, .interet-name::marker{
+    color: var(--vert-cv);
+    font-size: 1.3rem;
+}
+
 /* -- main right -- */
 .right{
     width: 70%;
     background-color: var(--blanc-cv);
 }
 .right section{
-    padding: 40px 80px;
+    padding: 40px 80px 0 80px;
+}
+.profil p{
+    text-indent: 25px;
+    text-align: justify;
+}
+.formation, .stage, .experience{
+    padding: 40px 60px 0 60px;
+}
+.formation-item, .stage-item, .experience-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.formation-item li, .stage-item li, .experience-item li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+time{
+    color: var(--vert-cv);
+    font-family: "Raleway", sans-serif;
+}
+.formation-name, .stage-name, .experience-name{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+.formation-name em, .stage-name em, .experience-name em{
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.8rem;
 }
