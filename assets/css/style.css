@@ -51,6 +51,7 @@ h1{
     max-width: 1600px;
     background-color: var(--blanc-cv);
     margin: 0 auto;
+
 }
 
 header{
@@ -87,7 +88,7 @@ img{
 }
 .contact{
     margin-top: 30px;
-    width: 500px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px 0;
@@ -95,10 +96,10 @@ img{
     justify-content: space-evenly;
 }
 .contact li{
-    width: 200px;
+    width: 490px;
     list-style: none;
     color: var(--blanc-cv);
-    padding-left: 40px;
+    padding-left: 70px;
 }
 .contact a{
     color: var(--blanc-cv);
@@ -188,6 +189,7 @@ hr{
 .right{
     width: 70%;
     background-color: var(--blanc-cv);
+    margin-bottom: 50px;
 }
 .right section{
     padding: 40px 80px 0 80px;
@@ -214,14 +216,43 @@ hr{
 }
 time{
     color: var(--vert-cv);
-    font-family: "Raleway", sans-serif;
+    font-family: "Lato", sans-serif;
 }
 .formation-name, .stage-name, .experience-name{
-    font-family: "Raleway", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: bold;
 }
 .formation-name em, .stage-name em, .experience-name em{
     font-weight: 400;
     font-style: italic;
     font-size: 0.8rem;
+}
+/* -- Footer -- */
+footer{
+
+    background-color: var(--vert-cv);
+}
+.rs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+.rs-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 0.8em;
+}
+.rs-item i{
+    font-size: 1.5em;
+    color: var(--blanc-cv);
+
+}
+.date, .date time{
+    color: var(--blanc-cv);
+    font-family: 'Raleway', sans-serif;
+
 }
